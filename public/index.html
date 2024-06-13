@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Social Básica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Red Social Básica</h1>
+    <div id="user-form">
+        <h2>Crear Usuario</h2>
+        <input type="text" id="user-name" placeholder="Nombre">
+        <input type="email" id="user-email" placeholder="Email">
+        <button onclick="createUser()">Crear Usuario</button>
+    </div>
+    <div id="post-form">
+        <h2>Crear Publicación</h2>
+        <input type="text" id="post-user-name" placeholder="Nombre de Usuario">
+        <textarea id="post-content" placeholder="Contenido"></textarea>
+        <button onclick="createPost()">Crear Publicación</button>
+    </div>
+    <div id="posts">
+        <h2>Publicaciones</h2>
+        <div id="posts-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
